@@ -30,12 +30,8 @@ ul {
 }
 
 i {
-    color:  #32cd32;
+    color:  #333;
     margin-right: 5px;
-}
-
-i.fa-calendar-alt {
-    color: #333;
 }
 
 a {
@@ -56,6 +52,14 @@ a {
     box-shadow: 6px 6px 5px 0px #000000bf;
 }
 
+.fa-calendar-alt {
+    font-weight: 100;
+}
+
+.py-1 {
+    margin: 10px 0;
+}
+
 .left {
     float: left;
 }
@@ -65,7 +69,7 @@ a {
 }
 
 .item {
-    padding-right: 31px;
+    padding-right: 27px;
     font-size: 0.9em;
     font-weight: bolder;
 }
@@ -103,11 +107,12 @@ a {
 }
 
 .time-location {
-    font-size: 0.8em;
-    font-weight: 600;
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
 .city {
+    font-weight: 600;
     margin-left: 20px;
 }
 
@@ -168,7 +173,7 @@ ul li.skill-item {
     display: block;
     font-weight: 600;
     float: right;
-    margin-top: 25px;
+    margin-top: 36px;
 }
 
 .clr {
@@ -188,6 +193,9 @@ ul li.skill-item {
     line-height: 2.5em;
 }
 
+#main-header i {
+    color: #1a8a1a;
+}
 #main-header #user-info {
     margin-top: 0px;
 
