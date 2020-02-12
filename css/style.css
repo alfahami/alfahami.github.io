@@ -7,7 +7,6 @@
  * License: MIT
  * Website: http://github.io/alfahami/
 */
-/* styles.css */
 
 /* Reset */
 * {
@@ -208,7 +207,6 @@ progress {
     margin: 0 10px;
     width: 72%;
 }
-/* IDs */
 
 .right-side {
     float: right;
