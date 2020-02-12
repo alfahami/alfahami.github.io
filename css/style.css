@@ -229,10 +229,11 @@ footer {
 }
 
 footer a {
-    color: #7b68ee;
+    color: #1a8a1a;
+    text-decoration: underline;
 }
 
 footer a:hover {
-    color:  #483d8b;
-    text-decoration: underline;
+    color: #333;
+    text-decoration: none;
 }
