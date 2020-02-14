@@ -177,7 +177,7 @@ ul li.skill-item {
     display: block;
     font-weight: 600;
     float: right;
-    margin-top: 25px;
+    margin-top: 32.1px;
 }
 
 .clr {
@@ -224,6 +224,10 @@ footer {
     font-size: 1.1em;
     margin-bottom: 40px;
     text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 footer a {
