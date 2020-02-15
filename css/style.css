@@ -19,7 +19,7 @@
 body, html {
     background: #e7e7e7;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 14x;
     line-height: 1.7em;
 }
 
@@ -239,3 +239,6 @@ footer a:hover {
     color: #333;
     text-decoration: none;
 }
+
+
+/* Media Queries */
