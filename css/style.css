@@ -18,6 +18,7 @@
 /* Main Styles */
 body, html {
     background: #e7e7e7;
+    color: #555;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.7em;
@@ -52,7 +53,7 @@ h4 {
 }
 
 h5 {
-    color: #1a8a1a;
+    color: #00b400;
     font-size: 1.2em;
 }
 
@@ -64,7 +65,7 @@ h6 {
 /* Classes */
 
 .main-wrapper {
-    background: #f8f8ff;
+    background: #fff;
     border: solid 1px #e5e4e2;
     box-shadow: 6px 6px 5px 0 #000000bf;
     color: #333;
@@ -185,7 +186,7 @@ ul li.skill-item {
 }
 
 header i {
-    color: #1a8a1a;
+    color: #00b400;
 }
 
 header img {
@@ -231,7 +232,7 @@ footer p {
 }
 
 footer a {
-    color: #1a8a1a;
+    color: #00b400;
     text-decoration: underline;
 }
 
