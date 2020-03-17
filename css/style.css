@@ -74,6 +74,53 @@ h6 {
     padding: 30px;
 }
 
+@media (max-width: 895px) {
+    .main-wrapper {
+        max-width: inherit;
+    }
+
+    #main-header .right {
+        /* display: none; */   
+    }
+    
+    #main-header .right img {
+        float: right;
+        position: absolute;
+        top: 110px;
+        right: 30px;
+        padding: 0;
+        height: 50px;
+        width: 50px;
+    }
+
+    #main-header h1 {
+        font-size: 1rem;
+    }
+
+    #main-header .navbar ul {
+        margin: 0 auto;
+    }
+
+    #main-header .item {
+        font-size: 0.75em;
+        float: left;
+        display: block;
+        
+    }
+ 
+    section.right-side {
+         float: none;
+         width: 100%;
+    }
+
+    section.left-side {
+        float: none;
+        width: 100%;
+    }
+    .left-side .subsection,
+    .right-side .subsection { display: block; }
+}
+
 .fa-calendar-alt {
     font-weight: 100;
 }
@@ -241,5 +288,3 @@ footer a:hover {
     text-decoration: none;
 }
 
-
-/* Media Queries */
