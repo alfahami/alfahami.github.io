@@ -74,14 +74,12 @@ h6 {
     padding: 30px;
 }
 
-@media (max-width: 895px) {
+@media (max-width: 910px) {
     .main-wrapper {
         max-width: inherit;
     }
 
-    #main-header .right {
-        /* display: none; */   
-    }
+    
     
     #main-header .right img {
         float: right;
@@ -102,7 +100,7 @@ h6 {
     }
 
     #main-header .item {
-        font-size: 0.75em;
+        font-size: 0.6rem;
         float: left;
         display: block;
         
