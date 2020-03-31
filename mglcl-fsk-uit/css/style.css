@@ -1,0 +1,280 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Goudy Bookletter 1911", Georgia, Times, serif;
+  font-size: 1.05em;
+  line-height: 1.7em;
+  background: url("../images/background-flou.png") center center/cover;
+  /* opacity: 0.9; */
+}
+
+a {
+  color: #919697;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bolder;
+  color: #5c6263;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  padding: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ul li {
+  list-style-position: inside;
+}
+
+/* Utility classes */
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.title {
+  padding: 10px 10px;
+  width: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #878b8d;
+}
+
+.title-md {
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  background: #878b8d;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+.left-paragraph {
+  float: left;
+  width: 80%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+}
+
+.solution-link {
+  font-style: italic;
+  float: right;
+  padding-top: 10px;
+}
+
+.clr {
+  clear: both;
+}
+
+.hr {
+  border: dotted 1px #818181;
+  width: 80%;
+}
+
+.l-heading {
+  font-weight: bolder;
+}
+
+.box {
+  margin: 40px 0;
+  border: solid 1px #818181;
+  box-shadow: 6px 6px 5px 0px #000000bf;
+}
+
+.description {
+  padding: 10px;
+  text-align: justify;
+}
+
+.centered {
+  text-align: center;
+}
+
+.sm-heading {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nb {
+  display: block;
+  padding-top: 5px;
+  font-style: italic;
+}
+
+/* Main-header */
+#navbar {
+  background: #333333;
+  color: #fff;
+
+  overflow: auto;
+}
+
+#navbar h1 {
+  float: left;
+  font-weight: 100;
+}
+#navbar a {
+  color: #fff;
+}
+
+#navbar ul {
+  float: right;
+  list-style: none;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar #logo a,
+#navbar ul li a {
+  font-weight: 500;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar #logo a:hover,
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  font-weight: bolder;
+  color: #f7c08a;
+  background: #444;
+}
+
+/* Media Queries */
+@media (max-width: 540px) {
+  #navbar .container h1 {
+    font-size: 0.8rem;
+    /* float: none; */
+    text-align: center;
+  }
+
+  #navbar .container ul {
+    /* float: none; */
+    display: block;
+    font-size: 0.6rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #navbar #logo a,
+  #navbar ul li a {
+    padding: 0.75rem;
+    text-align: center;
+  }
+
+  #main-header .container h1,
+  #main-header .container h3 {
+    font-size: 0.8rem;
+  }
+
+  #main-content .container .box h2 {
+    font-size: 1rem;
+  }
+
+  #main-content .container .box p {
+    font-size: 1rem;
+  }
+
+  #main-header .container #logo-universite,
+  #main-header .container #fsk {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
+}
+
+#main-header h1,
+#main-header h3 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#main-header h3 {
+  text-transform: capitalize;
+  margin-top: 2px;
+  padding-top: 2px;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+#main-header #logo-universite,
+#main-header #fsk {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px 5px;
+  border-radius: 50%;
+}
+
+#main-header #logo-universite {
+  background: url("../images/logo-universite.png") no-repeat center center/cover;
+}
+
+#main-header #fsk {
+  background: url("../images/faculte.png") no-repeat center center/cover;
+}
+
+#formations #first-year {
+  float: left;
+  width: 70%;
+}
+
+#formations #second-year {
+  float: right;
+  width: 30%;
+}
+
+#formations .semestre {
+  padding: 20px;
+}
+
+#contact-info {
+  padding: 20px 0;
+}
+
+#contact-info h3 {
+  text-transform: uppercase;
+}
+
+#main-footer {
+  text-align: center;
+  background: #333333;
+  color: #fff;
+  padding: 10px;
+}
+
+#main-footer a:hover {
+  font-weight: lighter;
+  color: #f7c08a;
+}
