@@ -2,7 +2,7 @@
   --primary-color: #009900;
   --secondary-color: rgba(0, 109, 0, 0.9);
   --light-color: #f3f3f3;
-  --gray-color: #ccc;
+  --gray-color: #e0e0e0;
   --dark-color: #333;
   --max-width: 1100px;
 }
@@ -66,6 +66,11 @@ a:hover {
 
 ul {
   list-style-type: none;
+}
+
+sup,
+sub {
+  text-transform: lowercase;
 }
 
 /* Utility Classes */

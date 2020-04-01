@@ -8,6 +8,7 @@
     url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400, 300, 700);
@@ -132,6 +133,10 @@ figure {
   margin: 0 0 20px 0;
 }
 
+sup, sub {
+   text-transform: lowercase;
+}
+
 ::-webkit-selection {
   color: #fff;
   background: #66d37e;
@@ -249,7 +254,7 @@ figure {
   position: relative;
 }
 .acem-nav ul li.has-dropdown .dropdown {
-  width: 140px;
+  width: 150px;
   -webkit-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.75);
@@ -291,7 +296,7 @@ figure {
   margin-bottom: 0;
 }
 .acem-nav ul li.has-dropdown .dropdown li a {
-  padding: 2px 0;
+  padding: 5px 0;
   display: block;
   color: #999999;
   line-height: 1.2;
@@ -580,7 +585,7 @@ figure {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(0, 180, 0, 0.9);
+  color: #66d37e;
 }
 
 .services {
@@ -1067,7 +1072,6 @@ input[type="text"] {
   font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: rgba(0, 180, 0, 0.9);
 }
 .acem-heading span {
   display: block;
