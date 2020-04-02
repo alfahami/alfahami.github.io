@@ -8,11 +8,30 @@
 /* Main Styling */
 html,
 body {
+  z-index: 999;
   font-family: "Goudy Bookletter 1911", Georgia, Times, serif;
   font-size: 1.05em;
   line-height: 1.7em;
-  background: url("../images/background-flou.png") center center/cover;
-  /* opacity: 0.9; */
+  color: #fff;
+  background: #000 url("../images/bg-1.jpg") no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+body::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 a {
@@ -55,19 +74,29 @@ ul li {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  background: #878b8d;
+  background: #4f7793;
 }
 
 .title-md {
   padding: 10px 10px;
   text-transform: uppercase;
   font-size: 1.4em;
-  background: #878b8d;
+  background: #4f7793;
 }
 
 .left {
   float: left;
   width: 40%;
+}
+
+.left ul li,
+.right ul li {
+  padding: 0 20px;
+}
+
+.left ul li:last-child,
+.right ul li:last-child {
+  margin-bottom: 8px;
 }
 
 .left-paragraph {
@@ -81,9 +110,10 @@ ul li {
 }
 
 .solution-link {
-  font-style: italic;
+  font-style: normal;
+  color: coral;
   float: right;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .clr {
@@ -102,6 +132,10 @@ ul li {
 .box {
   margin: 40px 0;
   border: solid 1px #818181;
+  background: url("../images/paper-white.jpg") no-repeat center center/cover;
+
+  position: relative;
+  color: #000;
   box-shadow: 6px 6px 5px 0px #000000bf;
 }
 
@@ -131,7 +165,8 @@ ul li {
 #navbar {
   background: #333333;
   color: #fff;
-
+  position: sticky;
+  top: 0;
   overflow: auto;
 }
 
@@ -259,8 +294,8 @@ ul li {
   padding: 20px;
 }
 
-#contact-info {
-  padding: 20px 0;
+#contact-info .box p {
+  padding: 0 20px !important;
 }
 
 #contact-info h3 {
@@ -269,7 +304,7 @@ ul li {
 
 #main-footer {
   text-align: center;
-  background: #333333;
+  background: #0e0c0c;
   color: #fff;
   padding: 10px;
 }
