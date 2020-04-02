@@ -63,8 +63,8 @@ ul li {
 /* Utility classes */
 .container {
   margin: 0 auto;
-  max-width: 980px;
-  padding: 0 20px;
+  max-width: 960px;
+  /* padding: 0 20px; */
   /* overflow: hidden; */
 }
 
@@ -204,6 +204,9 @@ ul li {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+  .container {
+    max-width: calc(100% - 20px);
+  }
   .left,
   .right {
     float: none;
@@ -215,9 +218,6 @@ ul li {
     max-width: calc(100% - 10px);
     padding: 0;
   }
-  .box {
-    padding-bottom: 25px;
-  }
   .left,
   .right {
     float: none;
@@ -226,7 +226,6 @@ ul li {
 
   a.solution-link {
     display: block;
-    margin-bottom: 15px;
   }
   #navbar .container h1 {
     font-size: 0.8rem;
