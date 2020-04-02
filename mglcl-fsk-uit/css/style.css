@@ -64,8 +64,8 @@ ul li {
 .container {
   margin: 0 auto;
   max-width: 980px;
-  overflow: hidden;
   padding: 0 20px;
+  overflow: hidden;
 }
 
 .title {
@@ -106,7 +106,7 @@ ul li {
 
 .right {
   float: right;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .solution-link {
@@ -130,10 +130,9 @@ ul li {
 }
 
 .box {
-  margin: 40px 0;
+  margin-bottom: 40px;
   border: solid 1px #818181;
   background: url("../images/paper-white.jpg") no-repeat center center/cover;
-
   position: relative;
   color: #000;
   box-shadow: 6px 6px 5px 0px #000000bf;
@@ -204,7 +203,12 @@ ul li {
 }
 
 /* Media Queries */
-@media (max-width: 540px) {
+@media screen and (max-width: 540px) {
+  .left,
+  .right {
+    float: none;
+    width: 100%;
+  }
   #navbar .container h1 {
     font-size: 0.8rem;
     /* float: none; */
