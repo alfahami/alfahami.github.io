@@ -33,11 +33,6 @@ body {
   background: #e8e8e8;
 }
 
-sup, 
-sub {
-  text-transform: lowercase;
-}
-
 /* Utility classes */
 .l-heading {
   text-transform: uppercase;
