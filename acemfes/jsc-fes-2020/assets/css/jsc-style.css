@@ -1140,7 +1140,8 @@ h4.fonction {
 @media (max-width: 768px) {
   #sponsors .sponsors img {
     flex-basis: 100%;
-    margin: 1rem 0;
+    width: 50px;
+    margin: 1.8rem 0;
   }
 }
 
