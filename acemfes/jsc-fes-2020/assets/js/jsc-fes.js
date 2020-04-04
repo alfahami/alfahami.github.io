@@ -1,15 +1,15 @@
-(function() {
+(function () {
   if ($) {
     // Basice Code keep it
-    $(document).ready(function() {
+    $(document).ready(function () {
       $(document).on("scroll", onScroll);
 
       //smoothscroll
-      $('a[href^="#"]').on("click", function(e) {
+      $('a[href^="#"]').on("click", function (e) {
         e.preventDefault();
         $(document).off("scroll");
 
-        $("a").each(function() {
+        $("a").each(function () {
           $(this).removeClass("active");
         });
         $(this).addClass("active");
@@ -20,7 +20,7 @@
           .stop()
           .animate(
             {
-              scrollTop: $target.offset().top - 65
+              scrollTop: $target.offset().top - 65,
             },
             800
           );
@@ -31,7 +31,7 @@
 
     function onScroll() {
       var scrollPos = $(document).scrollTop() + 60;
-      $("#left-nav ul li a").each(function() {
+      $("#left-nav ul li a").each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         var nav = $(".item-nav");
@@ -50,7 +50,7 @@
     }
 
     // Sticky menu background
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
       if (window.scrollY > 150) {
         document.querySelector("#jsc-nav").style.background = "rgba(0,0,0,0.9)";
       } else {
@@ -59,9 +59,9 @@
     });
 
     // Scroll and keep the background navbar color after reload
-    $(document).ready(function() {
+    $(document).ready(function () {
       checkHeaderStatus();
-      $(window).scroll(function() {
+      $(window).scroll(function () {
         checkHeaderStatus();
       });
     });
@@ -82,15 +82,15 @@
 
 // countdown
 
-(function($) {
-  $.fn.countdown = function(options, callback) {
+(function ($) {
+  $.fn.countdown = function (options, callback) {
     //custom 'this' selector
     thisEl = $(this);
 
     // array of custom settings
     var settings = {
       date: null,
-      format: null
+      format: null,
     };
 
     // append the settings array to options
@@ -176,10 +176,10 @@ $("#countdown").countdown(
     date: "13 April 2020 00:00:00",
 
     // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
-    format: "on"
+    format: "on",
   },
 
-  function() {
+  function () {
     // This will run when the countdown ends
     alert("We're Out Now");
   }
@@ -187,7 +187,7 @@ $("#countdown").countdown(
 
 //   Section Programme
 
-$(function() {
+$(function () {
   window.sr = ScrollReveal();
 
   if ($(window).width() < 768) {
@@ -201,21 +201,21 @@ $(function() {
       origin: "right",
       distance: "300px",
       easing: "ease-in-out",
-      duration: 900
+      duration: 900,
     });
   } else {
     sr.reveal(".js--fadeInLeft", {
       origin: "left",
       distance: "300px",
       easing: "ease-in-out",
-      duration: 900
+      duration: 900,
     });
 
     sr.reveal(".js--fadeInRight", {
       origin: "right",
       distance: "300px",
       easing: "ease-in-out",
-      duration: 900
+      duration: 900,
     });
   }
 
@@ -223,14 +223,14 @@ $(function() {
     origin: "left",
     distance: "300px",
     easing: "ease-in-out",
-    duration: 900
+    duration: 900,
   });
 
   sr.reveal(".js--fadeInRight", {
     origin: "right",
     distance: "300px",
     easing: "ease-in-out",
-    duration: 900
+    duration: 900,
   });
 
   // ACCORDION
