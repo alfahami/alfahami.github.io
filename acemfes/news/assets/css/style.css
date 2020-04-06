@@ -1,6 +1,7 @@
 :root {
   --primary-color: #009900;
-  --secondary-color: rgba(0, 109, 0, 0.9);
+  --secondary-color: #006d00e6;
+  --medium-color: #38af4e;
   --light-color: #f3f3f3;
   --gray-color: #e0e0e0;
   --dark-color: #333;
@@ -164,7 +165,7 @@ sub {
 }
 
 .btn-primary {
-  background: var(--primary-color);
+  background: var(--medium-color);
   transition: all 0.5s ease-in-out;
   color: var(--light-color);
 }
@@ -607,7 +608,6 @@ textarea::placeholder {
   #showcase .showcase-container .showcase-content h1 {
     font-size: 1.5rem;
   }
-
 }
 
 /* Article Home */
